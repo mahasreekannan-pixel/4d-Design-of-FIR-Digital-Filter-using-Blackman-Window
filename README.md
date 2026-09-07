@@ -198,17 +198,6 @@ title('Frequency Response of FIR BSF using Blackman Window');
 # RESULT: 
 Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
 
-# RESULT: 
-Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
-# RESULT: 
-Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
-# RESULT: 
-Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
-# RESULT: 
-Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
-
-# RESULT: 
-Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
 
 Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
 <img width="1600" height="1511" alt="image" src="https://github.com/user-attachments/assets/9159d355-80c0-4d3e-a201-c926aa5fe65a" />
