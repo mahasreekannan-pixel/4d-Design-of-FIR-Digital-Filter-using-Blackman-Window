@@ -202,3 +202,4 @@ Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were
 <img width="1600" height="1511" alt="image" src="https://github.com/user-attachments/assets/9159d355-80c0-4d3e-a201-c926aa5fe65a" />
 <img width="841" height="1445" alt="image" src="https://github.com/user-attachments/assets/47a25c07-41cb-4367-814f-41a7552d9670" />
 <img width="563" height="812" alt="image" src="https://github.com/user-attachments/assets/e7ad6303-85aa-4a46-bcf5-3a1e07b1c1c4" />
+<img width="563" height="812" alt="image" src="https://github.com/user-attachments/assets/e7ad6303-85aa-4a46-bcf5-3a1e07b1c1c4" />
