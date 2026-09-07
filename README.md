@@ -1,4 +1,4 @@
-<img width="747" height="691" alt="image" src="https://github.com/user-attachments/assets/07b81b1a-c519-42d0-a758-8ec1307a479a" /># FIR-FILTER-DESIGN
+# FIR-FILTER-DESIGN
 # EXP 4 d: Design-of-FIR-Digital-Filter-using-Blackman-Window
 
 # AIM 1:  To perform Design-of-LOWPASS FIR-Digital-Filter-using-Blackman-Window using SCILAB.
