@@ -203,6 +203,14 @@ Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were
 # RESULT: 
 Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
 # RESULT: 
+# RESULT: 
+Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
+# RESULT: 
+Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
+
+# RESULT: 
+Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
+
 Thus design of BAND STOP FIR digital filter using-Blackman-Window waveforms were plotted and output was verified.
 <img width="1600" height="1511" alt="image" src="https://github.com/user-attachments/assets/9159d355-80c0-4d3e-a201-c926aa5fe65a" />
 <img width="841" height="1445" alt="image" src="https://github.com/user-attachments/assets/47a25c07-41cb-4367-814f-41a7552d9670" />
