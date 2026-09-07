@@ -1,4 +1,4 @@
-# FIR-FILTER-DESIGN
+<img width="747" height="691" alt="image" src="https://github.com/user-attachments/assets/07b81b1a-c519-42d0-a758-8ec1307a479a" /># FIR-FILTER-DESIGN
 # EXP 4 d: Design-of-FIR-Digital-Filter-using-Blackman-Window
 
 # AIM 1:  To perform Design-of-LOWPASS FIR-Digital-Filter-using-Blackman-Window using SCILAB.
@@ -87,6 +87,10 @@ PC installed with SCILAB.
 <br>ylabel( 'Magnitude in dB'); 
 <br>title('Frequency Response of FIR HPF using Blackman Window');
 
+# Manual Calculations :
+<img width="1600" height="1511" alt="image" src="https://github.com/user-attachments/assets/9159d355-80c0-4d3e-a201-c926aa5fe65a" />
+<img width="841" height="1445" alt="image" src="https://github.com/user-attachments/assets/47a25c07-41cb-4367-814f-41a7552d9670" />
+
 # OUTPUT: 
 <img width="470" height="383" alt="image" src="https://github.com/user-attachments/assets/6c9bc6b5-efb6-4eea-9b55-a47c259feca3" />
 
@@ -102,9 +106,44 @@ Thus design of HIGH pass FIR digital filter using-Blackman-Window waveforms were
 PC installed with SCILAB. 
 
 # PROGRAM: 
-
-
+```
+clc ; 
+close ; 
+M=input('Enter the Odd Filter Length ='); 
+Wc=input('Enter the Digital Cut off frequency ='); 
+Wc2=Wc(2); 
+Wc1=Wc(1); 
+alpha= (M -1)/2 // Center Value 
+for n = 1:M 
+if (n ==alpha+1) 
+hd(n) =(Wc2-Wc1)/%pi ; 
+else 
+hd(n) =((sin(Wc2 *((n -1)-alpha)))-(sin(Wc1 *((n -1)-alpha))))/(((n -1)-alpha)*%pi); 
+end 
+end 
+// Blackman Window 
+for n = 1:M 
+W(n) = 0.42-(0.5*cos((2*%pi*(n-1))/(M-1)))+(0.08*cos((4*%pi*(n-1))/(M-1))); 
+end 
+//Windowing filter coefficients 
+h = hd.*W; 
+disp(h,'Filter Coefficients are') 
+[hzm,fr]= frmag (h,256) ; 
+subplot(2 ,1 ,1) 
+plot(2*fr, hzm) 
+xlabel( ' Normalized Digital Frequency w'); 
+ylabel( 'Magnitude '); 
+title( ' Frequency Response of FIR BPF using Blackman Window ') 
+hzm_dB = 20* log10 (hzm); 
+subplot (2 ,1 ,2); 
+plot(2*fr , hzm_dB); 
+xlabel( ' Normalized Digital Frequency W' ); 
+ylabel( 'Magnitude in dB'); 
+title('Frequency Response of FIR BPF using Blackman Window');
+```
 # OUTPUT: 
+<img width="753" height="695" alt="image" src="https://github.com/user-attachments/assets/957cd436-4be3-440f-9245-7b69b5c93877" />
+<img width="585" height="697" alt="image" src="https://github.com/user-attachments/assets/7c520a80-9e90-4d50-8871-35c6dee4ab42" />
 
 
 # RESULT: 
@@ -116,9 +155,44 @@ Thus design of BAND pass FIR digital filter using-Blackman-Window waveforms were
 PC installed with SCILAB. 
 
 # PROGRAM: 
-
-
+```
+clc ; 
+close ; 
+M=input('Enter the Odd Filter Length ='); 
+Wc=input('Enter the Digital Cut off frequency ='); 
+Wc2=Wc(2); 
+Wc1=Wc(1); 
+alpha= (M -1)/2 // Center Value 
+for n = 1:M 
+if (n ==alpha+1) 
+hd(n) =1-((Wc2-Wc1)/%pi); 
+else 
+hd(n) =((sin(Wc1 *((n -1)-alpha)))-(sin(Wc2 *((n -1)-alpha))))/(((n -1)-alpha)*%pi); 
+end 
+end 
+// Blackman Window 
+for n = 1:M 
+W(n) = 0.42-(0.5*cos((2*%pi*(n-1))/(M-1)))-(0.08*cos((4*%pi*(n-1))/(M-1))); 
+end 
+//Windowing filter coefficients 
+h = hd.*W; 
+disp(h,'Filter Coefficients are') 
+[hzm,fr]= frmag (h,256) ; 
+subplot(2 ,1 ,1) 
+plot(2*fr, hzm) 
+xlabel( ' Normalized Digital Frequency w'); 
+ylabel( 'Magnitude '); 
+title( ' Frequency Response of FIR BSF using Blackman Window ') 
+hzm_dB = 20* log10 (hzm); 
+subplot (2 ,1 ,2); 
+plot(2*fr , hzm_dB); 
+xlabel( ' Normalized Digital Frequency W' ); 
+ylabel( 'Magnitude in dB'); 
+title('Frequency Response of FIR BSF using Blackman Window');
+```
 # OUTPUT: 
+<img width="747" height="691" alt="image" src="https://github.com/user-attachments/assets/0c4a1a65-dd60-4188-8364-a6cf92cd5a1f" />
+<img width="563" height="812" alt="image" src="https://github.com/user-attachments/assets/e7ad6303-85aa-4a46-bcf5-3a1e07b1c1c4" />
 
 
 # RESULT: 
